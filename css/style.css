@@ -1,0 +1,108 @@
+/* Общие стили, которые применяются всегда */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+header, section, footer {
+    margin: 2vw;
+    padding: 4vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+    margin-bottom: 4vw;
+    word-wrap: break-word;
+}
+
+header {
+    background-color: #A93BFF;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    display: flex;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    background-color: #A93BFF;
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+header div {
+    align-items: center;
+}
+
+header img {
+    margin-right: 2vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.color-picker {
+    width: 80%;
+    font-size: 1.5em;
+    padding-left: 2vw;
+}
+
+#section-color {
+    width: 80%;
+}
+
+#slider-container {
+    width: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    display: none;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills-text {
+    width: 100%;
+    padding-left: 2vw;
+    font-size: 1.5em;
+}
+
+.obomne {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        flex: none;
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        display:block;
+    }
+    
+    .content-wrapper {
+        display:block;
+    }
+}
